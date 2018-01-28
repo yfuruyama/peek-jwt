@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "peek-jwt",
+  "description": "Peek at contents of JSON Web Token (JWT)",
+  "author": "Yuuki Furuyama",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": [
+  ]
+}
