@@ -7,20 +7,23 @@
     bindEvent() {
       const peek = this.peek.bind(this);
       window.addEventListener('mouseup', function(e) {
-        const selection = window.getSelection();
-        const selected = selection.toString();
-        if (selected.length == 0) {
-          return;
-        }
-        const position = selection.getRangeAt(0).getBoundingClientRect();
-        peek(selected, position);
+        // for separating "mouse up" and "text unselected" events,
+        // and preventing mishandling
+        setTimeout(function() {
+          const selection = window.getSelection();
+          const str = selection.toString();
+          if (str.length == 0) {
+            return;
+          }
+          const position = selection.getRangeAt(0).getBoundingClientRect();
+          peek(str, position);
+        }, 0);
       }, false);
     }
 
     peek(str, position) {
       const decoded = this._decodeJWT(str);
       if (decoded === null) {
-        console.log("not valid jwt: " + str);
         return;
       }
       const header = decoded[0];
