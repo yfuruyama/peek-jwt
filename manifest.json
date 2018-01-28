@@ -9,7 +9,8 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["main.js"]
+      "js": ["lib/tippy.2.0.9.all.min.js", "main.js"],
+      "css": ["main.css"]
     }
   ],
   "permissions": [

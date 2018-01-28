@@ -1,0 +1,30 @@
+.peek-jwt-theme.tippy-tooltip {
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+}
+.peek-jwt-theme.tippy-tooltip.bordered-theme {
+  border: 1px solid #bfc9dc;
+  box-shadow: none !important;
+}
+/* use arrow style, but do not show arrow at all because non-arrow style collapses entire style */
+.peek-jwt-theme.tippy-tooltip .tippy-arrow {
+  border: none !important;
+}
+
+.peek-jwt--container {
+  color: #26323d;
+}
+.peek-jwt--container--item {
+  margin: 0 0 5px 0;
+}
+.peek-jwt--container--item--heading {
+  font-size: 12px;
+}
+.peek-jwt--container--item--code {
+  font-size: 11px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0;
+}
