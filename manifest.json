@@ -5,16 +5,16 @@
   "author": "Yuki Furuyama",
   "version": "0.1",
   "icons": {
-    "16": "icon/icon_16x16.png",
-    "48": "icon/icon_48x48.png",
-    "128": "icon/icon_128x128.png"
+    "16": "image/icon/icon_16x16.png",
+    "48": "image/icon/icon_48x48.png",
+    "128": "image/icon/icon_128x128.png"
   },
   "content_scripts": [
     {
       "matches": [
         "<all_urls>"
       ],
-      "js": ["lib/tippy.2.0.9.all.min.js", "src/main.js"],
+      "js": ["src/lib/tippy.2.0.9.all.min.js", "src/main.js"],
       "css": ["src/main.css"]
     }
   ],
