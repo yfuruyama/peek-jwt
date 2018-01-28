@@ -4,4 +4,4 @@ convert-image:
 	convert image/icon/icon.png -background none -resize 128x128 image/icon/icon_128x128.png
 
 package:
-	zip package.zip image/icon/* src/* manifest.json
+	zip package.zip image/icon/* src/lib/* src/* manifest.json
