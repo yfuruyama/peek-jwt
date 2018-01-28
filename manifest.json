@@ -2,8 +2,13 @@
   "manifest_version": 2,
   "name": "peek-jwt",
   "description": "Peek at contents of JSON Web Token (JWT)",
-  "author": "Yuuki Furuyama",
-  "version": "1.0",
+  "author": "Yuki Furuyama",
+  "version": "0.1",
+  "icons": {
+    "16": "icon/icon_16x16.png",
+    "48": "icon/icon_48x48.png",
+    "128": "icon/icon_128x128.png"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -13,6 +18,5 @@
       "css": ["main.css"]
     }
   ],
-  "permissions": [
-  ]
+  "permissions": []
 }
