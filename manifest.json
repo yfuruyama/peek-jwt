@@ -14,8 +14,8 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["lib/tippy.2.0.9.all.min.js", "main.js"],
-      "css": ["main.css"]
+      "js": ["lib/tippy.2.0.9.all.min.js", "src/main.js"],
+      "css": ["src/main.css"]
     }
   ],
   "permissions": []
