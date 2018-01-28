@@ -40,8 +40,8 @@
       // wait for toolTipInsertDiv being appended
       setTimeout(function() {
         let toolTipContentDiv = document.createElement('div');
-        const headerContent = JSON.stringify(header, null, 4);
-        const payloadContent = JSON.stringify(payload, null, 4);
+        const headerContent = JSON.stringify(header, null, 2);
+        const payloadContent = JSON.stringify(payload, null, 2);
         toolTipContentDiv.innerHTML = `
           <div class="peek-jwt--container">
             <div class="peek-jwt--container--item">
