@@ -33,7 +33,7 @@
       let toolTipInsertDiv = document.createElement('div');
       const relative = document.body.parentNode.getBoundingClientRect();
       const positionLeft = position.left + (-relative.left) + 100; // 100 is adhoc buffer
-      const positionTop = position.top + (-relative.top);
+      const positionTop = position.top + (-relative.top) + 10; // 10 is adhoc buffer
       toolTipInsertDiv.style = `position: absolute; left: ${positionLeft}px; top: ${positionTop}px;`;
       document.body.appendChild(toolTipInsertDiv);
 
